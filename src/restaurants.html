@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cuina Catalana: Restaurants</title>
+  <link rel="stylesheet" href="./styles.scss" />
+  <script type="module" src="./script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>Cuina Catalana</h1>
+    </div>
+    <button id="menu-toggle" aria-label="Obrir menú">
+      <img src="./img/menu.png" alt="Obrir menú" id="menu-icon" />
+    </button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html" class="icon-home">Inici</a></li>
+        <li><a href="recipes.html" class="icon-recipes">Receptes</a></li>
+        <li><a href="restaurants.html" class="icon-restaurant active">Restaurants</a></li>
+        <li><a href="doc.html" class="icon-link">Fonts i crèdits</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Restaurants destacats</h2>
+      <p>
+        En aquesta pàgina es mostra una selecció dels restaurants més emblemàtics d'arreu del territori, especialitzats en plats típics de la cuina catalana.
+        Clica en qualsevol de les targetes per accedir al seu lloc web oficial.
+      </p>
+    </section>
+
+    <section class="restaurant-list">
+        <a href="https://cellercanroca.com/ca/" target="_blank" rel="noopener noreferrer" class="restaurant-card">
+          <img src="./img/celler-can-roca.jpg" alt="Celler de Can Roca" />
+          <h3>Celler de Can Roca</h3>
+          <p>Girona</p>
+        </a>
+        
+        <a href="https://www.disfrutarbarcelona.com/?lang=ca" target="_blank" rel="noopener noreferrer" class="restaurant-card">
+          <img src="./img/disfrutar.jpg" alt="Disfrutar">
+          <h3>Disfrutar</h3>
+          <p>Barcelona</p>
+        </a>
+      
+        <a href="https://semproniana.net/" target="_blank" rel="noopener noreferrer" class="restaurant-card">
+          <img src="./img/semproniana.jpg" alt="Semproniana">
+          <h3>Semproniana</h3>
+          <p>Barcelona</p>
+        </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cuina Catalana · PAC1 Eines HTML i CSS (UOC) · arturmage</p>
+  </footer>
+</body>
+</html>
