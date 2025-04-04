@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cuina catalana: Pa amb tomàquet</title>
+  <link rel="stylesheet" href="./styles.scss" />
+</head>
+<body>
+  <header>
+    <h1>Cuina Catalana</h1>
+    <button id="menu-toggle" aria-label="Obrir menú">
+      <img src="./img/menu.png" alt="Obrir menú" id="menu-icon" />
+    </button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html" class="icon-home">Inici</a></li>
+        <li><a href="recipes.html" class="icon-recipes active">Receptes</a></li>
+        <li><a href="restaurants.html" class="icon-restaurant">Restaurants</a></li>
+        <li><a href="doc.html" class="icon-link">Fonts i crèdits</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2>Pa amb tomàquet</h2>
+
+  <main class="dish-detail">
+    <section class="main-image">
+      <img src="./img/pa-tomaquet.png" alt="Pa amb tomàquet tradicional" />
+    </section>
+
+    <article>
+      <p>El pa amb tomàquet és un dels símbols més reconeguts de la cuina catalana. Senzill però saborós, aquest plat és el resultat perfecte de la combinació d'ingredients de qualitat amb una elaboració tradicional.</p>
+
+      <p>La base és una bona llesca de pa, preferiblement de pagès, torrat lleugerament. A sobre, s’hi frega un tomàquet madur, s’hi afegeix un raig d’oli d’oliva verge extra, i opcionalment, s’hi pot posar all i sal al gust.</p>
+
+      <p>Aquest plat acompanya infinitat de menjars, des d’embotits i formatges fins a carns o vegetals a la brasa. És una recepta que es menja tant a casa com en qualsevol restaurant de Catalunya.</p>
+    </article>
+
+    <button id="toggle-gallery">Mostra / Amaga galeria</button>
+
+    <section class="gallery">
+      <img src="./img/pa-tomaquet.png" alt="Pa amb tomàquet servit" />
+      <img src="./img/escudella.png" alt="Plats catalans típics" />
+      <img src="./img/canelons.png" alt="Altres plats per acompanyar" />
+    </section>
+
+    <section class="video">
+      <h2>Vídeo explicatiu</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/2pwY-sprtIM?si=0Ch24v1D6RvGlvZb" title="Com fer pa amb tomàquet" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cuina Catalana · PAC1 Eines HTML i CSS (UOC) · arturmage</p>
+  </footer>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>

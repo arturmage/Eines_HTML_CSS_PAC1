@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cuina catalana: Canelons</title>
+  <link rel="stylesheet" href="./styles.scss" />
+</head>
+<body>
+    <header>
+      <h1>Cuina Catalana</h1>
+      <button id="menu-toggle" aria-label="Obrir menú">
+        <img src="./img/menu.png" alt="Obrir menú" id="menu-icon" />
+      </button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html" class="icon-home">Inici</a></li>
+          <li><a href="recipes.html" class="icon-recipes active">Receptes</a></li>
+          <li><a href="restaurants.html" class="icon-restaurant">Restaurants</a></li>
+          <li><a href="doc.html" class="icon-link">Fonts i crèdits</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2>Restaurants tradicionals catalans</h2>
+
+    <main class="dish-detail">
+      <section class="main-image">
+        <img src="./img/canelons.png" alt="Canelons gratinats" />
+      </section>
+
+      <article>
+        <p>Els canelons són un dels plats més emblemàtics de les festes catalanes, especialment populars el dia de Sant Esteve. Amb origen italià, els canelons han estat totalment adoptats i transformats a la cuina catalana.</p>
+
+        <p>La recepta tradicional es fa amb carn rostida sobrant de l’escudella, que es tritura i s’enrotlla dins de pasta de caneló. Es cobreix amb una cremosa beixamel i formatge ratllat, i es gratina al forn fins que quedi daurat.</p>
+
+        <p>Aquest plat representa la filosofia de reaprofitament i cuina casolana catalana, i és ideal per a àpats familiars i celebracions especials.</p>
+      </article>
+
+      <button id="toggle-gallery">Mostra / Amaga galeria</button>
+
+      <section class="gallery">
+        <img src="./img/canelons.png" alt="Canelons casolans" />
+        <img src="./img/escudella.png" alt="Carn d'olla per als canelons" />
+        <img src="./img/pa-tomaquet.png" alt="Acompanyament típic" />
+      </section>
+
+      <section class="video">
+        <h2>Vídeo: com fer canelons tradicionals</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Z6s4YANLkqs?si=BHTN_DD1DEYHjVeI" title="Recepta de canelons" allowfullscreen></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Cuina Catalana · PAC1 Eines HTML i CSS (UOC) · arturmage</p>
+    </footer>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>

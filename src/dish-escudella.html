@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cuina catalana: Escudella</title>
+  <link rel="stylesheet" href="./styles.scss" />
+</head>
+<body>
+    <header>
+      <h1>Cuina Catalana</h1>
+      <button id="menu-toggle" aria-label="Obrir menú">
+        <img src="./img/menu.png" alt="Obrir menú" id="menu-icon" />
+      </button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html" class="icon-home">Inici</a></li>
+          <li><a href="recipes.html" class="icon-recipes active">Receptes</a></li>
+          <li><a href="restaurants.html" class="icon-restaurant">Restaurants</a></li>
+          <li><a href="doc.html" class="icon-link">Fonts i crèdits</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2>Escudella</h2>
+
+    <main class="dish-detail">
+      <section class="main-image">
+        <img src="./img/escudella.png" alt="Escudella i carn d'olla tradicional" />
+      </section>
+  
+      <article>
+        <p>L’escudella i carn d’olla és un dels plats més emblemàtics de la cuina catalana i sovint es considera el primer plat documentat a Europa. És una menja abundant i reconfortant, especialment present durant l’hivern i en àpats familiars.</p>
+  
+        <p>El plat consisteix en un brou fet amb diferents carns (vedella, pollastre, botifarra), ossos, cigrons i verdures com la col, la pastanaga o el nap. A mitja cocció s’hi afegeixen galets o arròs, que es serveixen com a primer plat, i les carns i llegums com a segon.</p>
+  
+        <p>És habitual cuinar-la per Nadal o festivitats especials, i és una mostra clara de la cuina de reaprofitament catalana, ja que sovint les restes de la carn s’utilitzen per fer canelons l’endemà.</p>
+      </article>
+
+      <button id="toggle-gallery">Mostra / Amaga galeria</button>
+  
+      <section class="gallery">
+        <img src="./img/escudella.png" alt="Escudella acabada de fer" />
+        <img src="./img/canelons.png" alt="Canelons fets amb les sobres" />
+        <img src="./img/pa-tomaquet.png" alt="Pa amb tomàquet per acompanyar" />
+      </section>
+  
+      <section class="video">
+        <h2>Vídeo: com es prepara l’escudella</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hZFPW0DP_W8?si=w6KVLt4yq8miHk6F"  title="Recepta d’escudella" allowfullscreen></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Cuina Catalana · PAC1 Eines HTML i CSS (UOC) · arturmage</p>
+    </footer>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
