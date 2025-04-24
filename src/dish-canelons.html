@@ -45,9 +45,47 @@
       <button id="toggle-gallery">Mostra / Amaga galeria</button>
 
       <section class="gallery">
-        <img src="./img/canelons.png" alt="Canelons casolans" />
-        <img src="./img/escudella.png" alt="Carn d'olla per als canelons" />
-        <img src="./img/pa-tomaquet.png" alt="Acompanyament típic" />
+        <picture>
+          <source 
+            srcset=
+            "
+              ./img/resized/pa-tomaquet-320.webp 320w,
+              ./img/resized/pa-tomaquet-768.webp 768w,
+              ./img/resized/pa-tomaquet-1024.webp 1024w
+            "
+            sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+            type="image/webp"
+          />
+          <img src="./img/resized/pa-tomaquet-320.webp" alt="Pa amb tomàquet servit" />
+        </picture>
+      
+        <picture>
+          <source 
+            srcset=
+            "
+              ./img/resized/escudella-320.webp 320w,
+              ./img/resized/escudella-768.webp 768w,
+              ./img/resized/escudella-1024.webp 1024w
+            "
+            sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+            type="image/webp"
+          />
+          <img src="./img/resized/escudella-320.webp" alt="Plats catalans típics" />
+        </picture>
+      
+        <picture>
+          <source 
+            srcset=
+            "
+              ./img/resized/canelons-320.webp 320w,
+              ./img/resized/canelons-768.webp 768w,
+              ./img/resized/canelons-1024.webp 1024w
+            "
+            sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+            type="image/webp"
+          />
+          <img src="./img/resized/canelons-320.webp" alt="Altres plats per acompanyar" />
+        </picture>
       </section>
 
       <section class="video">
