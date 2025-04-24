@@ -27,7 +27,12 @@
 
     <main class="dish-detail">
       <section class="main-image">
-        <img src="./img/escudella.png" alt="Escudella i carn d'olla tradicional" />
+        <picture>
+          <source srcset="./img/resized/escudella-1024.webp" media="(min-width: 1024px)" type="image/webp" />
+          <source srcset="./img/resized/escudella-768.webp" media="(min-width: 768px)" type="image/webp" />
+          <img src="./img/resized/escudella-320.webp" alt="Escudella i carn d'olla tradicional" />
+        </picture>
+        
       </section>
   
       <article>

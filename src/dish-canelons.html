@@ -27,7 +27,11 @@
 
     <main class="dish-detail">
       <section class="main-image">
-        <img src="./img/canelons.png" alt="Canelons gratinats" />
+        <picture>
+          <source srcset="./img/resized/canelons-1024.webp" media="(min-width: 1024px)" type="image/webp" />
+          <source srcset="./img/resized/canelons-768.webp" media="(min-width: 768px)" type="image/webp" />
+          <img src="./img/resized/canelons-320.webp" alt="Canelons gratinats" />
+        </picture>
       </section>
 
       <article>

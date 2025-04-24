@@ -27,7 +27,11 @@
 
   <main>
     <section class="hero">
-      <img src="./img/cuina-cat.png" alt="Pa amb tomàquet" />
+      <picture>
+        <source srcset="./img/resized/cuina-cat-1024.webp" media="(min-width: 1024px)" type="image/webp" />
+        <source srcset="./img/resized/cuina-cat-768.webp" media="(min-width: 768px)" type="image/webp" />
+        <img src="./img/resized/cuina-cat-320.webp" alt="Pa amb tomàquet" />
+      </picture>
       <h2>Descobreix els sabors de la cuina catalana</h2>
       <p>
         La cuina catalana s'emmarca dins la cuina mediterrània i n'és un exemple típic. Sovint fa referència al menjar de Catalunya

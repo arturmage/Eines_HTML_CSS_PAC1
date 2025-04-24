@@ -27,7 +27,12 @@
 
   <main class="dish-detail">
     <section class="main-image">
-      <img src="./img/pa-tomaquet.png" alt="Pa amb tomàquet tradicional" />
+      <picture>
+        <source srcset="./img/resized/pa-tomaquet-1024.webp" media="(min-width: 1024px)" type="image/webp" />
+        <source srcset="./img/resized/pa-tomaquet-768.webp" media="(min-width: 768px)" type="image/webp" />
+        <img src="./img/resized/pa-tomaquet-320.webp" alt="Pa amb tomàquet tradicional" />
+      </picture>
+      
     </section>
 
     <article>
