@@ -13,17 +13,30 @@ if (!fs.existsSync(outputFolder)) {
 }
 
 fs.readdirSync(inputFolder).forEach(file => {
-  const ext = path.extname(file).toLowerCase();
-  const name = path.basename(file, ext);
-
-  if (!['.jpg', '.jpeg', '.png'].includes(ext)) return;
-
-  sizes.forEach(size => {
-    sharp(path.join(inputFolder, file))
-      .resize({ width: size })
-      .webp({ quality })
-      .toFile(path.join(outputFolder, `${name}-${size}.webp`))
-      .then(() => console.log(`${name}-${size}.webp creat!`))
-      .catch(err => console.error(`Error ${file}:`, err));
+    const ext = path.extname(file).toLowerCase();
+    const name = path.basename(file, ext);
+  
+    if (!['.jpg', '.jpeg', '.png'].includes(ext)) return;
+  
+    const inputPath = path.join(inputFolder, file);
+  
+    sharp(inputPath)
+      .metadata()
+      .then(metadata => {
+        // Ignora icones
+        if (metadata.width <= 32 && metadata.height <= 32) {
+          console.log(`Icon ignored ${file} ${metadata.width}x${metadata.height}`);
+          return;
+        }
+  
+        sizes.forEach(size => {
+          sharp(inputPath)
+            .resize({ width: size })
+            .webp({ quality })
+            .toFile(path.join(outputFolder, `${name}-${size}.webp`))
+            .then(() => console.log(`${name}-${size}.webp generated`))
+            .catch(err => console.error(`Error ${file}:`, err));
+        });
+      })
+      .catch(err => console.error(`Error: ${file}:`, err));
   });
-});
