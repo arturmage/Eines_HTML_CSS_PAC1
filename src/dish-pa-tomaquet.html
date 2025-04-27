@@ -28,11 +28,15 @@
   <main class="dish-detail">
     <section class="main-image">
       <picture>
-        <source srcset="./img/resized/pa-tomaquet-1024.webp" media="(min-width: 1024px)" type="image/webp" />
-        <source srcset="./img/resized/pa-tomaquet-768.webp" media="(min-width: 768px)" type="image/webp" />
-        <img src="./img/resized/pa-tomaquet-320.webp" alt="Pa amb tomàquet tradicional" />
+        <!-- Desktop -->
+        <source srcset="./img/pa-tomaquet.png" media="(min-width: 1024px)" type="image/png" />
+        <!-- Tablet -->
+        <source srcset="./img/pa-tomaquet-tablet.webp" media="(min-width: 768px)" type="image/webp" />
+        <!-- Mobile -->
+        <source srcset="./img/pa-tomaquet-mobile.webp" media="(max-width: 767px)" type="image/webp" />
+        <!-- Fallback -->
+        <img src="./img/pa-tomaquet.png" alt="Pa amb tomàquet tradicional" />
       </picture>
-      
     </section>
 
     <article>

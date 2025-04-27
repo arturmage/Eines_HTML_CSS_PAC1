@@ -28,9 +28,14 @@
     <main class="dish-detail">
       <section class="main-image">
         <picture>
-          <source srcset="./img/resized/canelons-1024.webp" media="(min-width: 1024px)" type="image/webp" />
-          <source srcset="./img/resized/canelons-768.webp" media="(min-width: 768px)" type="image/webp" />
-          <img src="./img/resized/canelons-320.webp" alt="Canelons gratinats" />
+            <!-- Desktop -->
+            <source srcset="./img/canelons.png" media="(min-width: 1024px)" type="image/png" />
+            <!-- Tablet -->
+            <source srcset="./img/canelons-tablet.webp" media="(min-width: 768px)" type="image/webp" />
+            <!-- Mobile -->
+            <source srcset="./img/canelons-mobile.webp" media="(max-width: 767px)" type="image/webp" />
+            <!-- Fallback -->
+          <img src="./img/canelons.png" alt="Canelons gratinats" />
         </picture>
       </section>
 
