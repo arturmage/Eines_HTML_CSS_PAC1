@@ -146,22 +146,6 @@ header {
     color: #444;
   }
 
-  .gallery {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-    transition: all 0.3s ease-in-out;
-
-    img {
-      width: 200px;
-      height: 130px;
-      object-fit: cover;
-      border-radius: 6px;
-    }
-  }
-
   .video {
     text-align: center;
 
@@ -444,3 +428,50 @@ footer {
   background-image: url('./img/arrow.png');
   display: none;
 }
+
+
+/** Animation **/
+.gallery {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, height 0.5s ease;
+
+  &.open {
+    opacity: 1;
+    height: auto;
+  }
+
+  img {
+    width: 200px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 6px;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
+
+
+@keyframes fadeInGallery {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+

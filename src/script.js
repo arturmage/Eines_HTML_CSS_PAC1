@@ -7,7 +7,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (btn && gallery) {
     btn.addEventListener("click", () => {
-      gallery.classList.toggle("hidden");
+      gallery.classList.toggle("open");
+
+      if (gallery.classList.contains("open")) {
+        const images = gallery.querySelectorAll('img');
+        images.forEach((img, index) => {
+          img.style.animation = 'none';
+          void img.offsetWidth;
+          img.style.animation = `fadeInGallery 0.8s forwards`;
+          img.style.animationDelay = `${0.2 * (index + 1)}s`;
+          img.style.opacity = '1';
+        });
+      }
     });
   }
 
@@ -26,7 +37,4 @@ document.addEventListener("DOMContentLoaded", () => {
       icon.alt = "Obrir menú";
     }
   });
-  
 });
-
-  
