@@ -12,6 +12,7 @@ header {
   background-color: #ffe4b5;
   padding: 1rem;
   text-align: center;
+  align-items: center;
 
   nav ul {
     list-style: none;
@@ -25,6 +26,9 @@ header {
       color: #333;
       font-weight: bold;
     }
+  }
+  .logo-title {
+    justify-content: center;
   }
 }
 
@@ -474,6 +478,36 @@ footer {
     transform: translateY(0);
   }
 }
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2rem;
+
+  img.svg-cat {
+    width: 40px;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Respecte per l'accessibilitat */
+@media (prefers-reduced-motion: reduce) {
+  .svg-cat {
+    animation: none !important;
+  }
+}
+
 
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
