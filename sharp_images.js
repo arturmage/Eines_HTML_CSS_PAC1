@@ -8,7 +8,7 @@ const outputFolder = './src/img/resized';
 const densitySizes = [320, 768, 1024];
 const multipliers = [1, 2, 3];
 const baseWidth = 400;
-const quality = 80;
+const quality = 60;
 
 if (!fs.existsSync(outputFolder)) {
   fs.mkdirSync(outputFolder, { recursive: true });
