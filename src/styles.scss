@@ -508,3 +508,13 @@ footer {
     transition: none !important;
   }
 }
+
+.restaurant-card.clip img {
+  clip-path: inset(10% 5% 10% 5%); // top, right, bottom, left
+  transition: clip-path 0.4s ease, transform 0.1s ease;
+  border-radius: 1rem;
+}
+
+.restaurant-card.clip img:hover {
+  clip-path: inset(5% 10% 5% 10%);
+}
