@@ -501,14 +501,6 @@ footer {
   }
 }
 
-/* Respecte per l'accessibilitat */
-@media (prefers-reduced-motion: reduce) {
-  .svg-cat {
-    animation: none !important;
-  }
-}
-
-
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -516,4 +508,3 @@ footer {
     transition: none !important;
   }
 }
-
