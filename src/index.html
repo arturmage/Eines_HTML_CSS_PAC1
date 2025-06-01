@@ -10,7 +10,7 @@
 <body>
   <header>
     <h1 class="logo-title">
-      <img src="./img/Flag_map_of_Catalonia.svg" alt="Mapa Catalunya" class="svg-cat" />
+      <img src="./img/Flag_map_of_Catalonia.svg" alt="Mapa Catalunya" class="svg-cat"/>
       Cuina Catalana
     </h1>    
     <button id="menu-toggle" aria-label="Obrir menú">
@@ -33,7 +33,7 @@
       <picture>
         <source srcset="./img/resized/cuina-cat-1024.webp" media="(min-width: 1024px)" type="image/webp" />
         <source srcset="./img/resized/cuina-cat-768.webp" media="(min-width: 768px)" type="image/webp" />
-        <img src="./img/resized/cuina-cat-320.webp" alt="Pa amb tomàquet" />
+        <img src="./img/resized/cuina-cat-320.webp" alt="Pa amb tomàquet" loading="lazy"/>
       </picture>
       <h2>Descobreix els sabors de la cuina catalana</h2>
       <p>
@@ -59,6 +59,6 @@
   </footer>
   
 
-  <script type="module" src="./script.js"></script>
+  <script type="module" src="./script.js" defer></script>
 </body>
 </html>
