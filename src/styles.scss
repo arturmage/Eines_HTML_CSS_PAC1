@@ -518,3 +518,11 @@ footer {
 .restaurant-card.clip img:hover {
   clip-path: inset(5% 10% 5% 10%);
 }
+
+/* Millores PAC3*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+  font-family: 'Montserrat';
+  src: url('...') format('woff2');
+  font-display: swap;
+}
